@@ -2,23 +2,23 @@ package org.example.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Person {
-
+public class Author {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private int age;
 
-    public Person( String name, int age) {
+    public Author(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
-    public Person() {
+    public Author() {
     }
 
     public Long getId() {
@@ -47,7 +47,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "Author{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
