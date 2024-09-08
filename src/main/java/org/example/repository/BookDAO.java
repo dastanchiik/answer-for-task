@@ -1,6 +1,5 @@
 package org.example.repository;
 
-import org.example.model.Author;
 import org.example.model.Book;
 import org.example.util.HibernateDTO;
 import org.hibernate.Session;

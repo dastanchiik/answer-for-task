@@ -4,7 +4,6 @@ import org.example.model.Author;
 import org.example.model.Book;
 import org.example.repository.AuthorDAO;
 import org.example.repository.BookDAO;
-
 import java.util.Objects;
 import java.util.Scanner;
 
